@@ -12,7 +12,7 @@
     --color-span: #626c7f;
     --purple:#a729f5;
     --purple-hover:rgb(167, 41, 245, 0.6);
-    --primery-text-color: #313e51;
+    --primary-text-color: #313e51;
     --secondary-text-color: #626c7f;
     --pontuacao-bg: #fff;
     --shadow: 0px 16px 40px 0px rgba(143, 160, 193, 0.14);
@@ -37,7 +37,7 @@ body.escuro {
 }
 
 body { 
-    height: 100svh;
+    height: 100vh;
     background: var(--bg-mobile) var(--bg-color);
     background-repeat: no-repeat;
     background-size: cover;
@@ -116,7 +116,7 @@ main h2 strong {
 }
 
 .pontuacao {
-    background:var(--pntuacao-bg) ;
+    background:var(--pontuacao-bg) ;
     padding: 32px;
     display: flex;
     flex-direction: column;
