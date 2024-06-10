@@ -1,5 +1,8 @@
 import { trocarTema, verificarTema } from "./helpers/tema-helpers.js"
 
+const botaoTema = document.querySelector(".tema button")
+const body = document.querySelector("body")
+
 botaoTema.addEventListener("click", () => {
     trocarTema(body, botaoTema)
 })
@@ -12,7 +15,8 @@ botoesAssunto.forEach(botao => {
 })
 
 function selecionarAssunto (evento){
-    const assunto = evento.target.innerText
+    const classeBotao = evento.target.className
+    const assunto = document.querySelector(`.${classeBotao} span`).innerText
     localStorage.setItem("assunto", assunto)
     window.location.href = "./pages/quiz/quiz.html"        
 }
